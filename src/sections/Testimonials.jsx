@@ -8,7 +8,6 @@ export default function Testimonials() {
       id="testimonials"
       className="w-full flex flex-col gap-5 h-fit p-7 lg:p-20"
     >
-      <p className="text-center text-xl">Testimonials</p>
       <h1 className="text-green-600 font-bold text-6xl text-center leading-[68px]">
         What our clients says
       </h1>
