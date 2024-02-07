@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { close, menu } from "../assets/icons";
+
 export default function Header() {
   const [navIconToggle, setNavIconToggle] = useState(false);
   const [menuClass, setMenuClass] = useState("");
@@ -77,28 +78,17 @@ export default function Header() {
         </ul>
       </div>
       <div className="flex lg:hidden flex-col text-black">
-        {navIconToggle ? (
-          <>
-            <img
-              src={close}
-              alt="close"
-              width={40}
-              height={40}
-              onClick={() => setNavIconToggle(!navIconToggle)}
-            />
-          </>
-        ) : (
-          <>
-            <img
-              src={menu}
-              alt="menu"
-              width={40}
-              height={40}
-              onClick={() => setNavIconToggle(!navIconToggle)}
-            />
-          </>
-        )}
-
+        <div
+          className="burger-menu text-green-500"
+          onClick={() => {
+            setNavIconToggle(!navIconToggle);
+            document.querySelector(".burger-menu").classList.toggle("active");
+          }}
+        >
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
         {navIconToggle && (
           <div
             className={`bg-white py-4 absolute top-[88px] right-0 w-full ${menuClass}`}
