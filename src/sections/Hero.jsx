@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex justify-center items-center w-1/2 px-5 py-20 object-cover">
-        <img src={heroImg} alt="" />
+        <img src="/heroimg.png" alt="hero" />
       </div>
     </section>
   );
