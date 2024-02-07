@@ -1,5 +1,4 @@
 import React from "react";
-import heroImg from "../assets/images/heroImg.png";
 export default function Hero() {
   return (
     <section
