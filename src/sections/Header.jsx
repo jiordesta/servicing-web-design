@@ -29,7 +29,7 @@ export default function Header() {
       style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}
     >
       <h1 className="text-green-500 text-3xl font-bold">CodeHub</h1>
-      <div className="hidden lg:flex justify-end items-center gap-2">
+      <div className="hidden md:flex justify-end items-center gap-2">
         <ul className="flex justify-center items-center gap-3">
           <li>
             <a
@@ -76,7 +76,7 @@ export default function Header() {
           </a>
         </ul>
       </div>
-      <div className="flex lg:hidden flex-col text-black">
+      <div className="flex md:hidden flex-col text-black">
         <div
           className="burger-menu text-green-500"
           onClick={() => {
@@ -90,7 +90,8 @@ export default function Header() {
         </div>
         {navIconToggle && (
           <div
-            className={`bg-white py-4 absolute top-[88px] right-0 w-full ${menuClass}`}
+            className={`py-4 absolute top-[84px] right-0 w-full ${menuClass}`}
+            style={{ backgroundColor: "#fffffff3" }}
           >
             <ul className="text-end text-green-500 px-5 font-semibold text-2xl">
               <li>
