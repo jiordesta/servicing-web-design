@@ -19,9 +19,6 @@ export default function Hero() {
           <button className="border-2 border-green-800 text-green-800 text-[18px] rounded-md px-4 lg:px-8 py-3 hover:border-black hover:text-black cursor-pointer">
             view more
           </button>
-          <button className="border-2 border-green-800 text-green-800 text-[18px] rounded-md px-4 lg:px-8 py-3 hover:border-black hover:text-black cursor-pointer">
-            watch video
-          </button>
         </div>
       </div>
       <div className="flex justify-center items-center w-1/2 px-5 py-20 object-cover">

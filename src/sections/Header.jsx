@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { close, menu } from "../assets/icons";
 
 export default function Header() {
   const [navIconToggle, setNavIconToggle] = useState(false);
@@ -29,7 +28,7 @@ export default function Header() {
       className="w-full text-white flex justify-between items-center px-8 py-6 sticky top-0 z-40"
       style={{ backgroundColor: "rgba(255, 255, 255, 1)" }}
     >
-      <h1 className="text-green-500 text-3xl font-bold">PlantHUB</h1>
+      <h1 className="text-green-500 text-3xl font-bold">CodeHub</h1>
       <div className="hidden lg:flex justify-end items-center gap-2">
         <ul className="flex justify-center items-center gap-3">
           <li>
